@@ -1,0 +1,443 @@
+:root {
+  /* Fonts */
+  /* --mainFont: 'Staatliches', cursive;
+    --textFont: 'Open Sans', sans-serif;
+    --secondaryFont: 'Raleway', sans-serif; */
+  /* Colors */
+  --primary: #ff5b00;
+  --darkGray: #2f2e2e;
+  --lightGray: #ebebeb;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** Globals */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 120rem;
+  /** 1200px */
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+/** Header */
+header {
+  padding: 0 2rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images/hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  height: 60rem;
+  background-size: cover;
+  text-align: center;
+}
+
+.logo {
+  color: #fff;
+  font-family: 'Yesteryear', cursive;
+  font-size: 4rem;
+}
+
+/** Menu */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem, 4rem;
+}
+
+.nav-menu {
+  color: var(--white);
+}
+
+.nav-menu li {
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-menu li a {
+  color: var(--white);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+  color: #f2ac32;
+}
+
+.header-title-1 {
+  color: #f2ac32;
+  font-size: 4.4rem;
+  font-family: 'Rochester', cursive;
+  margin-top: 16rem;
+  margin-bottom: 1.2rem;
+}
+
+.header-title-2 {
+  color: var(--white);
+  font-family: 'Oswald', sans-serif;
+  font-size: 5.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.header-cta-button {
+  color: var(--white);
+  background-color: #f2ac32;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-cta-button:hover {
+  background-color: #c48924;
+}
+
+.search-icon {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: var(--white);
+}
+
+.my-bag {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+/**Mobile Menu */
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 3.5rem;
+  height: 0.3rem;
+  background-color: var(--white);
+  margin: 0.6rem 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.mobile-menu li a {
+  color: var(--white);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.mobile-menu li a:hover {
+  color: #f2ac32;
+}
+
+/** Discover Section */
+.discover-section {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10rem;
+}
+
+.food-border {
+  border: 0.2rem solid #f2ac32;
+  position: relative;
+}
+
+.food-overlay {
+  padding: 10rem 1rem 0 1rem;
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: -1px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+.food-item {
+  width: 24rem;
+  height: 40rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+.food-item a {
+  font-size: 1.2rem;
+  color: #f2ac32;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.food-item p {
+  color: #636363;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.food-1 {
+  background-image: url(../images/burger.jpg);
+  background-size: cover;
+  margin-top: -3rem;
+  -webkit-box-shadow: -1px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+.food-2 {
+  background-image: url(../images/egg-toast.jpg);
+  background-size: cover;
+  -webkit-box-shadow: -1px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+.discover-h1 {
+  color: #f2ac32;
+  font-family: 'Rochester', cursive;
+  margin-bottom: 1.5rem;
+}
+
+.discover-h2 {
+  color: var(--black);
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/** Specialties Section */
+.specialties-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../images/various-plates.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/various-plates.jpg);
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.specialties-middle {
+  text-align: center;
+  position: relative;
+}
+
+.specialties-h1 {
+  color: #f2ac32;
+  font-family: 'Rochester', cursive;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.specialties-h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 8rem;
+  color: #fff;
+}
+
+.specialties-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.specialties-col {
+  width: 35rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.specialties-image1,
+.specialties-image2,
+.specialties-image3 {
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 3rem;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.specialties-image1 {
+  background-image: url(../images/soup.jpg);
+  background-size: cover;
+}
+
+.specialties-image1:hover .specialties-overlay,
+.specialties-image2:hover .specialties-overlay,
+.specialties-image3:hover .specialties-overlay {
+  opacity: 1;
+}
+
+.specialties-image2 {
+  background-image: url(../images/steak.jpg);
+  background-size: cover;
+}
+
+.specialties-image3 {
+  background-image: url(../images/pancake.jpg);
+  background-size: cover;
+}
+
+.specialties-h3 {
+  font-size: 2.6rem;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin-bottom: 8rem;
+}
+
+.specialties-overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(242, 172, 50, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.specialties-overlay-border {
+  border: 0.2rem solid #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+
+.specialties-middle:before {
+  content: '';
+  position: absolute;
+  border-top: 10rem solid #f0f0f0;
+  border-right: 100vw solid transparent;
+  top: -10rem;
+  left: 0;
+}
+
+.specialties-middle:after {
+  content: '';
+  position: absolute;
+  border-bottom: 10rem solid #f0f0f0;
+  border-left: 100vw solid transparent;
+  bottom: -10rem;
+  right: 0;
+}
+
+/** Responsive Part Begins For Mobile Devices */
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+/** Responsive Part Begins For Large Devices */
+/*# sourceMappingURL=main.css.map */
