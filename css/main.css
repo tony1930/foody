@@ -440,4 +440,185 @@ nav {
 }
 
 /** Responsive Part Begins For Large Devices */
+/** Special Menu Section */
+.special-menu-section {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 5rem;
+}
+
+.special-menu-container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.special-menu-h1 {
+  font-family: "Rochester", cursive;
+  color: #f2ac32;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.special-menu-h2 {
+  color: #000000;
+  margin-bottom: 5rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.special-menu-h3 {
+  width: 100%;
+  font-family: "Rochester", cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.separator,
+.separator-orange {
+  display: inline-block;
+  width: 4rem;
+  border-bottom: 0.2rem solid var(--white);
+  margin: 1.5rem auto;
+}
+
+.special-menu-p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.special-menu-h4 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.3rem;
+  width: 100%;
+}
+
+.special-menu-col {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-large {
+  width: 50%;
+  height: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-large-1,
+.col-large-3 {
+  background-color: #f2ac32;
+  color: var(--white);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-ice-cream,
+.fa-utensils,
+.fa-burger,
+.fa-pizza-slice {
+  width: 100%;
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.col-large-2 {
+  background-image: url(../images/icecream.jpg);
+  background-size: cover;
+}
+
+.col-large-4 {
+  background-image: url(../images/pizza-slice.jpg);
+  background-size: cover;
+}
+
+.fa-burger,
+.fa-pizza-slice {
+  color: #f2ac32;
+  font-size: 5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.col-small {
+  width: 50%;
+  height: 22.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.col-small-1 {
+  background-color: var(--white);
+}
+
+.col-small-2 {
+  background-image: url(../images/salmon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.col-small-3 {
+  background-image: url(../images/small-pizza.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.special-menu-small-h3 {
+  font-family: "Rochester", cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  width: 100%;
+  color: #f2ac32;
+}
+
+.separator-orange {
+  border-bottom: 0.2rem solid #f2ac32;
+}
+
+.special-menu-small-h4,
+.special-menu-small-h5 {
+  width: 100%;
+  color: var(--black);
+  letter-spacing: 0.3rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.special-menu-small-h5 {
+  color: #f2ac32;
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
