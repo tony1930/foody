@@ -622,8 +622,8 @@ nav {
     padding: 1rem 2.5rem;
   }
 
-   /** Responsive Part Begins For Mobile Devices */
-   @media only screen and (max-width: 768px) {
+   /** Responsive Part Begins For Large Devices */
+   @media only screen and (min-width: 768px) {
     header nav {
       display: none;
     }
@@ -632,7 +632,8 @@ nav {
     }
   }
 
-   /** Responsive Part Begins For Large Devices */
-   @media only screen and (min-width: 768px) {
+   /** Responsive Part Begins For Mobile Devices */
+   @media only screen and (max-width: 768px) {
     
   }
+  
