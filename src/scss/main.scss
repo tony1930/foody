@@ -5,7 +5,7 @@
     --secondaryFont: 'Raleway', sans-serif; */
 
     /* Colors */
-    --primary: #ff5b00;
+    --primary: #f2ac32;
     --darkGray: #2f2e2e;
     --lightGray: #ebebeb;
 
@@ -46,38 +46,45 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
     height: 60rem;
     background-size: cover;
     text-align: center;
 }
+
 .logo {
     color: #fff;
     font-family: 'Yesteryear', cursive;
     font-size: 4rem;
 }
+
   /** Menu */
 nav {
     display: flex;
     justify-content: space-between;
     padding: 3rem, 4rem;
 }
+
 .nav-menu {
     color: var(--white);
 }
+
 .nav-menu li {
     display: inline-block;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
+
 .nav-menu li a {
     color: var(--white);
     padding-left: 1rem;
     padding-right: 1rem;
     transition: color 0.3s ease-in-out;
 }
+
 .nav-menu li a:hover {
     color: #f2ac32;
 }
@@ -89,6 +96,7 @@ nav {
     margin-top: 16rem;
     margin-bottom: 1.2rem;
 }
+
 .header-title-2 {
     color: var(--white);
     font-family: 'Oswald', sans-serif;
@@ -96,6 +104,7 @@ nav {
     letter-spacing: 0.2rem;
     margin-bottom: 2.5rem;
 }
+
 .header-cta-button {
     color: var(--white);
     background-color: #f2ac32;
@@ -104,18 +113,22 @@ nav {
     font-size: 1.4rem;
     transition: all 0.3s ease-in-out;
 }
+
 .header-cta-button:hover {
     background-color: rgb(196, 137, 36);
 }
+
 .search-icon {
     margin-left: 2rem;
     margin-right: 2rem;
     color: var(--white);
 }
+
 .my-bag {
   color: var(--white);
     font-size: 2rem;
 }
+
 /**Mobile Menu */
 #hamburger-icon {
     margin: auto 0;
@@ -165,12 +178,14 @@ nav {
     font-family: 'Oswald', sans-serif;
     margin-bottom: 1rem;
   }
+
   .mobile-menu li a {
     color: var(--white);
     padding-left: 1rem;
     padding-right: 1rem;
     transition: color 0.3s ease-in-out;
   }
+
   .mobile-menu li a:hover {
     color: #f2ac32;
   }
@@ -182,10 +197,12 @@ nav {
     justify-content: center;
     padding: 10rem;
   }
+
   .food-border {
     border: 0.2rem solid #f2ac32;
     position: relative;
   }
+
   .food-overlay {
     padding: 10rem 1rem 0 1rem;
     position: absolute;
@@ -198,6 +215,7 @@ nav {
     -moz-box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.75);
     box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.75);
   }
+
   .food-item {
     width: 24rem;
     height: 40rem;
@@ -205,6 +223,7 @@ nav {
     margin-right: 0.5rem;
     text-align: center;
   }
+
   .food-item a {
     font-size: 1.2rem;
     color: #f2ac32;
@@ -212,11 +231,13 @@ nav {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
   }
+
   .food-item p {
     color: rgb(99, 99, 99);
     font-size: 1.2rem;
     padding-bottom: 2rem;
   }
+
   .food-1 {
     background-image: url(../images/burger.jpg);
     background-size: cover;
@@ -225,6 +246,7 @@ nav {
     -moz-box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.75);
     box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.75);
   }
+
   .food-2 {
     background-image: url(../images/egg-toast.jpg);
     background-size: cover;
@@ -232,11 +254,13 @@ nav {
     -moz-box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.75);
     box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.75);
   }
+
   .discover-h1 {
     color: #f2ac32;
     font-family: 'Rochester', cursive;
     margin-bottom: 1.5rem;
   }
+
   .discover-h2 {
     color: var(--black);
     font-family: 'Oswald', sans-serif;
@@ -252,16 +276,19 @@ nav {
     padding-top: 10rem;
     padding-bottom: 10rem;
    }
+
    .specialties-middle {
     text-align: center;
     position: relative;
   }
+
    .specialties-h1 {
     color: #f2ac32;
     font-family: 'Rochester', cursive;
     margin-bottom: 1.5rem;
     font-size: 4rem;
   }
+
 .specialties-h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
@@ -269,15 +296,18 @@ nav {
     margin-bottom: 8rem;
     color: #fff;
   }
+
   .specialties-row {
     display: flex;
     justify-content: center;
   }
+
   .specialties-col {
     width: 35rem;
     margin-right: 2rem;
     margin-left: 2rem;
   }
+
   .specialties-image1,
   .specialties-image2,
   .specialties-image3 {
@@ -288,23 +318,28 @@ nav {
     transition: all 0.4s ease-in-out;
     cursor: pointer;
   }
+
   .specialties-image1 {
     background-image: url(../images/soup.jpg);
     background-size: cover;
   }
+
   .specialties-image1:hover .specialties-overlay,
   .specialties-image2:hover .specialties-overlay,
   .specialties-image3:hover .specialties-overlay {
     opacity: 1;
   }
+
   .specialties-image2 {
     background-image: url(../images/steak.jpg);
     background-size: cover;
   }
+
   .specialties-image3 {
     background-image: url(../images/pancake.jpg);
     background-size: cover;
   }
+
   .specialties-h3 {
     font-size: 2.6rem;
     font-family: 'Oswald', sans-serif;
@@ -312,6 +347,7 @@ nav {
     letter-spacing: 0.2rem;
     margin-bottom: 8rem;
   }
+
   .specialties-overlay {
     opacity: 0;
     position: absolute;
@@ -321,6 +357,7 @@ nav {
     padding: 1rem;
     transition: all 0.4s ease-in-out;
   }
+
   .specialties-overlay-border {
     border: 0.2rem solid #fff;
     width: 100%;
@@ -333,6 +370,7 @@ nav {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
   }
+
   .specialties-middle:before {
     content: '';
     position: absolute;
@@ -341,6 +379,7 @@ nav {
     top: -10rem;
     left: 0;
   }
+  
   .specialties-middle:after {
     content: '';
     position: absolute;
@@ -348,22 +387,6 @@ nav {
     border-left: 100vw solid transparent;
     bottom: -10rem;
     right: 0;
-  }
-
-
-  /** Responsive Part Begins For Mobile Devices */
-  @media only screen and (max-width: 768px) {
-    header nav {
-      display: none;
-    }
-    #hamburger-icon {
-      display: block;
-    }
-  }
-
-   /** Responsive Part Begins For Large Devices */
-   @media only screen and (min-width: 768px) {
-    
   }
 
   /** Special Menu Section */
@@ -389,7 +412,7 @@ nav {
   }
 
   .special-menu-h2 {
-    color: #000000;
+    color: var(--black);
     margin-bottom: 5rem;
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
@@ -522,4 +545,94 @@ nav {
   .special-menu-small-h5 {
     color: #f2ac32;
     margin-top: 1rem;
+  }
+
+  /** Our Menu section */
+
+  .our-menu-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/our-menu.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 5rem;
+  }
+
+
+  .our-menu-h1 {
+    font-family: "Rochester", cursive;
+    color: #f2ac32;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+  }
+
+  .our-menu-h2 {
+    color: var(--white);
+    margin-bottom: 5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .our-menu-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .our-menu-col {
+    width: 40%;
+    max-width: 50rem;
+  }
+
+  .food-container {
+    color: var(--white);
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 2.5rem;
+  }
+  .food-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+
+  .food-price {
+    font-size: 2.5rem;
+    color: #f2ac32;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .food-ingredients {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  .our-menu-button {
+    border: 0.1rem solid var(--white);
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .our-menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--black);
+    padding: 1rem 2.5rem;
+  }
+
+   /** Responsive Part Begins For Mobile Devices */
+   @media only screen and (max-width: 768px) {
+    header nav {
+      display: none;
+    }
+    #hamburger-icon {
+      display: block;
+    }
+  }
+
+   /** Responsive Part Begins For Large Devices */
+   @media only screen and (min-width: 768px) {
+    
   }
