@@ -76,6 +76,7 @@ nav {
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    margin-right: 3rem;
 }
 
 .nav-menu li a {
@@ -219,8 +220,7 @@ nav {
   .food-item {
     width: 24rem;
     height: 40rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.5rem;
     text-align: center;
   }
 
@@ -622,8 +622,127 @@ nav {
     padding: 1rem 2.5rem;
   }
 
-   /** Responsive Part Begins For Large Devices */
-   @media only screen and (min-width: 768px) {
+  /** Booking Table Section */
+
+  .booking-table-section {
+    padding: 10rem;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .booking-table-h1 {
+    font-family: "Rochester", cursive;
+    color: #f2ac32;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+  }
+
+  .booking-table-h2 {
+    color: var(--black);
+    margin-bottom: 5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .booking-table-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .booking-area {
+    background-color: var(--white);
+    margin: 3rem;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .booking-icon {
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    border-right: 0.1rem solid #f0f0f0;
+  }
+
+  .booking-date {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .booking-cta {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+  }
+
+  /** Footer Section */
+  footer {
+    padding: 6rem 0;
+    padding-bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/our-menu.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    margin: 2rem 3rem;
+  }
+
+  .footer-title {
+    font-family: 'Oswald', sans-serif;
+    color: var(--primary); 
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  .footer-text {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .footer-email {
+    padding: 1rem 1rem;
+    width: 20rem;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-subscribe {
+    display: inline-block;
+    width: 20rem;
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--primary);
+    height: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+  }
+
+  .copyright {
+    padding: 4rem;
+    color: #f0f0f0;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    border-top: 0.1rem solid rgba(240, 240, 240, 0.2);
+    letter-spacing: 0.2rem;
+  }
+
+  .copyright-name {
+    color: var(--primary);
+  }
+
+
+   /** Responsive Part Begins For Mobile Devices */
+   @media only screen and (max-width: 768px) {
     header nav {
       display: none;
     }
@@ -632,8 +751,8 @@ nav {
     }
   }
 
-   /** Responsive Part Begins For Mobile Devices */
-   @media only screen and (max-width: 768px) {
+   /** Responsive Part Begins For Large Devices */
+   @media only screen and (min-width: 768px) {
     
   }
   
